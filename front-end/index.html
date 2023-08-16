@@ -1186,7 +1186,7 @@
               default:
                 let textWrapper = document.createElement("div");
                 textWrapper.style.textAlign = "center";
-                textWrapper.innerHTML = "该文件不支持预览";
+                textWrapper.innerHTML = "This file does not support preview";
                 content.innerHTML = "";
                 content.appendChild(textWrapper);
                 break;
@@ -1204,7 +1204,7 @@
                 );
                 const btn = document.querySelector(".btn.quote");
                 btn.innerHTML = "已复制";
-                setTimeout(() => (btn.innerHTML = "引用"), 250);
+                setTimeout(() => (btn.innerHTML = "Copy link"), 250);
               });
             document
               .querySelector(".btn.share")
@@ -1226,7 +1226,7 @@
                 );
                 const btn = document.querySelector(".btn.share");
                 btn.innerHTML = "已复制";
-                setTimeout(() => (btn.innerHTML = "分享"), 250);
+                setTimeout(() => (btn.innerHTML = "share"), 250);
               });
             switchRightDisplay("preview");
 
@@ -1603,9 +1603,9 @@
           <div class="preview">
             <div class="info">
               <div class="file-name"></div>
-              <div class="btn download">下载</div>
-              <div class="btn quote">引用</div>
-              <div class="btn share">分享</div>
+              <div class="btn download">download</div>
+              <div class="btn quote">copy link</div>
+              <div class="btn share">share</div>
             </div>
             <div class="content"></div>
           </div>
